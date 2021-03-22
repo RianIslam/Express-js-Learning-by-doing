@@ -3,7 +3,11 @@ const app = express();
 
 
 app.get('/',(req,res)=>{
-    res.send("thank you for calling me");
+    const fruit ={
+        products:"apple",
+        price:200
+    }
+    res.send(fruit);
 })
 
 app.listen(3001,() => console.log('Listening to port 3001'));
