@@ -1,13 +1,21 @@
 {
-  "name": "express-js-learning-by-doing",
+  "name": "mongo",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RianIslam/Express-js-Learning-by-doing.git"
+  },
   "author": "Rian Islam",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RianIslam/Express-js-Learning-by-doing/issues"
+  },
+  "homepage": "https://github.com/RianIslam/Express-js-Learning-by-doing#readme",
   "dependencies": {
     "express": "^4.17.1"
   }
