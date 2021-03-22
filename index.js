@@ -8,27 +8,26 @@ app.use(cors());
 app.use(bodyParser.json());
 const users = ["karim","rahim","jodu"];
 
-// app.get('/',(req,res)=>{
-//     const fruit ={
-//         products:"apple",
-//         price:200
-//     }
-//     res.send(fruit);
-// })
+app.get('/',(req,res)=>{
+    const fruit ={
+        products:"apple",
+        price:200
+    }
+    res.send(fruit);
+})
 
-// app.get('/fruit',(req,res)=>{
-//     res.send({fruit:'banana',quantity:2999,price:20000});
-// })
+app.get('/fruit',(req,res)=>{
+    res.send({fruit:'banana',quantity:2999,price:20000});
+})
 
-// app.get('/users/:id',(req,res)=>{
-//     const id = req.params.id;
+app.get('/users/:id',(req,res)=>{
+    const id = req.params.id;
 
-//     const name =  users[id];
-//     res.send({id,name})
-// })
+    const name =  users[id];
+    res.send({id,name})
+})
 
-//post
-
+////////////////////////////////post
 app.post('/addUser', (req,res)=>{
     
     const user = req.body;
