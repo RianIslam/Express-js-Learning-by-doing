@@ -1,6 +1,7 @@
 const express = require('express');
 const app = express();
 
+const users = ["karim","rahim","jodu"];
 
 app.get('/',(req,res)=>{
     const fruit ={
@@ -15,7 +16,10 @@ app.get('/fruit',(req,res)=>{
 })
 
 app.get('/users/:id',(req,res)=>{
-    console.log(req.params);
+    const id = req.params.id;
+
+    const name =  users[id];
+    res.send({id,name})
 })
 
 app.listen(3001,() => console.log('Listening to port 3001'));
